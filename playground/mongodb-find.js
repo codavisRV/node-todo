@@ -21,11 +21,11 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     //     console.log('unable to fetch todos', err)
     // });
 
-    db.collection('Users').find({age: 29}).toArray().then((count) => {
-        console.log(count);
-    }, (err) => {
-        console.log('failed');
-    })
+    // db.collection('Users').find({age: 29}).toArray().then((count) => {
+    //     console.log(count);
+    // }, (err) => {
+    //     console.log('failed');
+    // })
 
-    // db.close();
+    db.close();
 });
